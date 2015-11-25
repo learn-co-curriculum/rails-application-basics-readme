@@ -14,6 +14,14 @@
 
 Welcome to the world of Ruby on Rails development, with over a decade of open source contributions, Rails has evolved into one of the most powerful web application frameworks available. Before we can start building applications it is important to first understand what the Ruby on Rails framework is.. and what it's not.
 
+
+## Why use a framework?
+
+If you wanted to put surround sound in your house, would you go and spend years researching how to best fabricate speakers, learn how to transfer sound through wires, weld your own sound board, and create from scratch every other component that would be required to have a surround sound system in your home? Most likely not, it would be much smarter and more efficient to purchase a surround sound system from an organization that already put in all of the research and development work to create a professional system.
+
+In the same way, when it comes to building a web application it would technically be possible to build out all of the functionalities needed yourself, but it's typically a better idea to leverage a system that has already spent over a decade developing the tools necessary for getting applications built.
+
+
 ## What is Ruby on Rails?
 
 * **A web framework** - A web framework provides developers the tools they need in order to build applications. While every application is unique there are certain components that can be found in almost every application, such as: routing, asset management, database connections, and the list goes on. A good web framework gives developers these baseline tools so that they don't have to create the base application functionality for each new project.
