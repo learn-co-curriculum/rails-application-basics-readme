@@ -21,3 +21,5 @@ Should cover the rails application CLI and rails new
 Should explain how to start a local rails server and what port 3000 is and how to look at your rails application in a browser.
 
 Should explain the rails console.
+
+<a href='https://learn.co/lessons/rails-application-basics-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
