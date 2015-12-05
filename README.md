@@ -10,6 +10,9 @@
 6. Load the local site from port 3000 in a browse
 7. Start a Rails console with the Rails cli
 
+[View this lesson on Learn.co](https://learn.co/lessons/rails-application-basics-readme)
+
+
 # Ruby on Rails Introduction
 
 Welcome to the world of Ruby on Rails development, with over a decade of open source contributions, Rails has evolved into one of the most powerful web application frameworks available. Before we can start building applications it is important to first understand what the Ruby on Rails framework is.. and what it's not.
@@ -28,9 +31,12 @@ In the same way, when it comes to building a web application it would technicall
 * **A Ruby Gem** - At its core, Ruby on Rails is simply a set of Ruby code libraries, and since the entire codebase is open source you have the ability to review the framework to better understand how it works.
 * **A MVC framework** - MVC stands for Model-View-Controller, this essentially means that Rails takes advantage of the popular application architecture that helps developers naturally separate concerns and organize their applications properly. This setup encourages a specific set of conventions, such as placing the logic for the application in the model files, the code flow in the controllers, and the views to simply display content to the user.
 
+*On a side by very important note: don't worry if some or all of what we just reviewed seems foreign, we'll be covering everything in detail in future lessons, so don't worry if it all feels a little overwhelming*
+
 ## What Ruby on Rails is not
 * **A programming language** - This is one of the most common misconceptions, Ruby on Rails is not a programming language, instead it is a set of code libraries built in Ruby.
 * **A slow framework** - Due to the fact that Rails is one of the most straightforward frameworks to learn, it can lead to a number of poor coding practices from beginners. However if built properly, Rails projects can be as fast as any other framework. Furthermore, with Rails service based architecture it makes it a perfect candidate for microservice applications, which can be some of the fastest and best performing applications on the web.
+
 
 # Creating your first Rails project
 
@@ -56,13 +62,13 @@ There are a number of common naming conventions for Rails app names, typically y
 
 Since you will be working with this file structure on a daily basis, it is very important to understand and become familiar with the file system. Below is a breakdown for each directory:
 
-* app – contains the models, views, and controllers, along with the the rest of the core functionality of the application. This is the one directory where you can make a change and not have to restart the Rails server. The majority of your time will be spent working in this directory. In addition to the full MVC structure, this directory also contains the full Rails asset pipeline directories, such as: css files, javascripts, images, fonts, etc.
+* app – contains the models, views, and controllers, along with the the rest of the core functionality of the application. This is the one directory where you can make a change and not have to restart the Rails server. The majority of your time will be spent working in this directory. In addition to the full MVC structure, this directory also contains non Ruby files, such as: css files, javascripts, images, fonts, etc.
 
 * bin – some built-in Rails tasks that you most likely will never have to work with.
 
 * config – the config directory manages a number of settings that control the default behavior, including: the environment settings, a set of modules that are initialized when the application starts, the ability to set language values, the application settings, the database settings, the application routes, and lastly the secret key base.
 
-* db – within the db directory you will find the database schema file that lists the database table, their columns and the column’s associated data types. The db directory also contains the seeds.rb file, which lets you create some data that can be utilized in the application. This is a great way to quickly integrate data in the application without having to manually add records through a web form element.
+* db – within the db directory you will find the database schema file that lists the database table, their columns and the column’s associated data types. The db directory also contains the seeds.rb file, which lets you create some data that can be utilized in the application. This is a great way to quickly integrate data in the application without having to manually add records through a web form element. The schema file can be found at `db/schema.rb`
 
 * lib – while many developers could build full applications without ever entering the lib directory, you will discover that it can be incredibly helpful. The lib/tasks directory is where custom rake tasks are created. You have already used a built-in rake task when you ran the database creation and migration tasks; however, creating custom rake tasks can be very helpful and sometimes necessary. An example of a rake task I have created recently was a rake task that I had the server run in the background that called an outside API and synced the API data into the application’s database.
 
@@ -70,11 +76,11 @@ Since you will be working with this file structure on a daily basis, it is very 
 
 * public – this directory contains some of the custom error pages, such as 404 errors, along with the robots.txt file which will let developers control how search engines index the application on the web.
 
-* test – if you did not bypass the Minitest installation, Rails will install the test directory; if you added the option of –skip-test-unit this test directory will not be included.
+* test – by default Rails will install the test suite in this directory. This is where all of your specs, factories, test helpers, and test configuration files can be found. *Side note: if you are using RSpec this directory will be called `spec/` and not `test/`*
 
 * tmp – this is where the temporary items are stored and is rarely accessed by developers.
 
-* vendor – in earlier versions of Rails the public folder used to be where developers could place assets, such as CSS styles and JavaScript code, but in Rails 4+ the Rails asset pipeline responsibilities were moved to the app/assets directory. In Rails 4+ the vendor directory can be utilized to manage outside JavaScript frameworks.
+* vendor – this directory has been utilized for varying purposes in the past, in Rails 4+ its main purpose is for integrating client side MVC frameworks, such as AngularJS.
 
 * Gemfile – the Gemfile contains all of the gems that are included in the application; this is where you will place outside libraries that are utilized in the application. After any change to the Gemfile you will need to run: bundle. This will call in all of the code dependencies into the application. The Gem process can seem like a mystery to new developers, but it is important to realize that the Gems that are brought into an application are simply Ruby files that help extend the functionality of the app.
 
@@ -130,3 +136,5 @@ Rails ships with a great set of view helpers, one of my favorites is the ```plur
 ```helper.pluralize(5, 'laptop')```
 
 This should return "5 laptops", if you switch the 5 to 1, it will return "1 laptop", pretty cool, right? This means that the Rails console is working, to close the session run the command ```control + d``` and it will return you to the regular terminal session.
+
+Why are we using the `rails console` instead of just starting an `irb` session? That's a great question, try running the same `pluralize` method in an `irb` session and you'll see the following error `NameError: undefined local variable or method `helper' for main:Object`. The reason for the error is because there is a very significant difference between the `rails console` and `irb`, even though they both run Ruby code, `rails console` loads the full Rails environment, which gives you access to Rails' specific methods (along with the full application database). Don't worry if the console is still fuzzy, we'll be using it constantly in future lessons and it will soon become second nature to use.
