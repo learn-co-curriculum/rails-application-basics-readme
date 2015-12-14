@@ -7,7 +7,7 @@
 3. Properly name a newly generated Rails application by using and naming both the app constant and directory
 4. List the information that goes into the folders and files within a Rails file skeleton
 5. Start a local server using the Rails cli
-6. Load the local site from port 3000 in a browse
+6. Load the local site from port 3000 in a browser
 7. Start a Rails console with the Rails cli
 
 [View this lesson on Learn.co](https://learn.co/lessons/rails-application-basics-readme)
@@ -15,14 +15,14 @@
 
 # Ruby on Rails Introduction
 
-Welcome to the world of Ruby on Rails development, with over a decade of open source contributions, Rails has evolved into one of the most powerful web application frameworks available. Before we can start building applications it is important to first understand what the Ruby on Rails framework is.. and what it's not.
+Welcome to the world of Ruby on Rails development! With over a decade of open source contributions, Rails has evolved into one of the most powerful web application frameworks available. Before we can start building applications it is important to first understand what the Ruby on Rails framework is.. and what it's not.
 
 
-## Why use a framework?
+## Why Use a Framework?
 
-If you wanted to put surround sound in your house, would you go and spend years researching how to best fabricate speakers, learn how to transfer sound through wires, weld your own sound board, and create from scratch every other component that would be required to have a surround sound system in your home? Most likely not, it would be much smarter and more efficient to purchase a surround sound system from an organization that already put in all of the research and development work to create a professional system.
+If you wanted to put surround sound in your house, would you go and spend years researching how to best fabricate speakers, learn how to transfer sound through wires, weld your own sound board, and create from scratch every other component that would be required to have a surround sound system in your home? Most likely not. Instead it would be much smarter and more efficient to purchase a surround sound system from an organization that already put in all of the research and development work to create a professional system.
 
-In the same way, when it comes to building a web application it would technically be possible to build out all of the functionalities needed yourself, but it's typically a better idea to leverage a system that has already spent over a decade developing the tools necessary for getting applications built.
+In the same way, when it comes to building a web application it would technically be possible to build out all of the functionalities yourself, but it's typically a better idea to leverage a system that has already spent over a decade developing the tools necessary for getting applications built.
 
 
 ## What is Ruby on Rails?
@@ -31,14 +31,14 @@ In the same way, when it comes to building a web application it would technicall
 * **A Ruby Gem** - At its core, Ruby on Rails is simply a set of Ruby code libraries, and since the entire codebase is open source you have the ability to review the framework to better understand how it works.
 * **A MVC framework** - MVC stands for Model-View-Controller, this essentially means that Rails takes advantage of the popular application architecture that helps developers naturally separate concerns and organize their applications properly. This setup encourages a specific set of conventions, such as placing the logic for the application in the model files, the code flow in the controllers, and the views to simply display content to the user.
 
-*On a side by very important note: don't worry if some or all of what we just reviewed seems foreign, we'll be covering everything in detail in future lessons, so don't worry if it all feels a little overwhelming*
+*On a side, but very important, note: don't worry if some or all of what we just reviewed seems foreign. We'll be covering everything in detail in future lessons, so don't worry if it all feels a little overwhelming*
 
 ## What Ruby on Rails is not
-* **A programming language** - This is one of the most common misconceptions, Ruby on Rails is not a programming language, instead it is a set of code libraries built in Ruby.
+* **A programming language** - This is one of the most common misconceptions. Ruby on Rails is not a programming language; instead it is a set of code libraries built in Ruby.
 * **A slow framework** - Due to the fact that Rails is one of the most straightforward frameworks to learn, it can lead to a number of poor coding practices from beginners. However if built properly, Rails projects can be as fast as any other framework. Furthermore, with Rails service based architecture it makes it a perfect candidate for microservice applications, which can be some of the fastest and best performing applications on the web.
 
 
-# Creating your first Rails project
+# Creating Your First Rails Project
 
 *Before you continue, this assumes that you have Ruby, RubyGems, and Bundler installed on your system*
 
@@ -50,13 +50,13 @@ As mentioned above, Rails is simply a Ruby Gem, to install it on your system, ru
 
 Depending on your system configuration you may need to prepend the command with ```sudo``` to install the gem as the root user. Once the gem is installed you can create Rails applications!
 
-## Generating a new Rails application
+## Generating a New Rails Application
 
-Our application is going to be called BlogFlash, to create the application, run the following command:
+Our application is going to be called BlogFlash. To create the application, run the following command:
 
 ```rails new blog-flash```
 
-There are a number of common naming conventions for Rails app names, typically you will want to use all lower case letters, separated by '-', as shown in our ```blog-flash``` naming structure. In the same way that there are rules for naming methods, variables, classes, etc. in Ruby, there are naming rules for application names. Since the application name is used as the app constant and throughout the application the best approach is to keep your naming simple and to follow a standard naming practice.
+There are a number of common naming conventions for Rails app names. Typically you will want to use all lower case letters, separated by '-', as shown in our ```blog-flash``` naming structure. In the same way that there are rules for naming methods, variables, classes, etc. in Ruby, there are naming rules for application names. Since the application name is used as the app constant and throughout the application the best approach is to keep your naming simple and to follow a standard naming practice.
 
 ## Rails File Structure Overview
 
@@ -94,7 +94,7 @@ Before we can startup the rails server, first you can create the database by run
 
 ```rake db:create```
 
-## Starting up the Rails Server
+## Starting Up the Rails Server
 
 To startup the Rails server, make sure that you are in the root of the application in the terminal and run:
 
