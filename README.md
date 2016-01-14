@@ -56,7 +56,7 @@ Our application is going to be called BlogFlash. To create the application, run 
 
 ```rails new blog-flash```
 
-There are a number of common naming conventions for Rails app names. Typically you will want to use all lower case letters, separated by '-', as shown in our ```blog-flash``` naming structure. In the same way that there are rules for naming methods, variables, classes, etc. in Ruby, there are naming rules for application names. Since the application name is used as the app constant and throughout the application the best approach is to keep your naming simple and to follow a standard naming practice.
+There are a number of common naming conventions for Rails app names. Typically you will want to use all lower case letters, separated by '-', as shown in our ```blog-flash``` naming structure. In the same way that there are rules for naming methods, variables, classes, etc. in Ruby, there are naming rules for application names. Since the application name is used as the app constant and throughout the application, the best approach is to keep your naming simple and to follow a standard naming practice.
 
 ## Rails File Structure Overview
 
@@ -72,7 +72,7 @@ Since you will be working with this file structure on a daily basis, it is very 
 
 * lib – while many developers could build full applications without ever entering the lib directory, you will discover that it can be incredibly helpful. The lib/tasks directory is where custom rake tasks are created. You have already used a built-in rake task when you ran the database creation and migration tasks; however, creating custom rake tasks can be very helpful and sometimes necessary. An example of a rake task I have created recently was a rake task that I had the server run in the background that called an outside API and synced the API data into the application’s database.
 
-* log – within the log directory you will discover the application logs. This can be helpful for debugging purposes, but for production application I will typically use a outside service since they can offer more advanced services such as querying and alerts.
+* log – within the log directory you will discover the application logs. This can be helpful for debugging purposes, but for a production application I will typically use an outside service since they can offer more advanced services such as querying and alerts.
 
 * public – this directory contains some of the custom error pages, such as 404 errors, along with the robots.txt file which will let developers control how search engines index the application on the web.
 
@@ -138,3 +138,5 @@ Rails ships with a great set of view helpers, one of my favorites is the ```plur
 This should return "5 laptops", if you switch the 5 to 1, it will return "1 laptop", pretty cool, right? This means that the Rails console is working, to close the session run the command ```control + d``` and it will return you to the regular terminal session.
 
 Why are we using the `rails console` instead of just starting an `irb` session? That's a great question, try running the same `pluralize` method in an `irb` session and you'll see the following error `NameError: undefined local variable or method `helper' for main:Object`. The reason for the error is because there is a very significant difference between the `rails console` and `irb`, even though they both run Ruby code, `rails console` loads the full Rails environment, which gives you access to Rails' specific methods (along with the full application database). Don't worry if the console is still fuzzy, we'll be using it constantly in future lessons and it will soon become second nature to use.
+
+<a href='https://learn.co/lessons/rails-application-basics-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
