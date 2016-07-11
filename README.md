@@ -114,7 +114,7 @@ This will startup the rails server and you will see output such as the following
 
 Now that the server is running properly, you can go and verify that it's working properly in the browser by going to: ```http://localhost:3000/```
 
-Here you will see the 'Welcome aboard' page that ships with Rails and it shows that we're ready to start building the application!
+Here you will see the 'Yay! You're on Rails!' page that ships with Rails and it shows that we're ready to start building the application!
 
 ## Using the Rails Console
 
@@ -140,3 +140,5 @@ This should return "5 laptops", if you switch the 5 to 1, it will return "1 lapt
 Why are we using the `rails console` instead of just starting an `irb` session? That's a great question, try running the same `pluralize` method in an `irb` session and you'll see the following error `NameError: undefined local variable or method `helper` for main:Object`. The reason for the error is because there is a very significant difference between the `rails console` and `irb`, even though they both run Ruby code, `rails console` loads the full Rails environment, which gives you access to Rails' specific methods (along with the full application database). Don't worry if the console is still fuzzy, we'll be using it constantly in future lessons and it will soon become second nature to use.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-application-basics-readme' title='Rails Application Basics'>Rails Application Basics</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/rails-application-basics-readme'>Rails Application Basics</a> on Learn.co and start learning to code for free.</p>
