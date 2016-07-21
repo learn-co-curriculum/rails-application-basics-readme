@@ -10,9 +10,6 @@
 6. Load the local site from port 3000 in a browser
 7. Start a Rails console with the Rails cli
 
-[View this lesson on Learn.co](https://learn.co/lessons/rails-application-basics-readme)
-
-
 # Ruby on Rails Introduction
 
 Welcome to the world of Ruby on Rails development! With over a decade of open source contributions, Rails has evolved into one of the most powerful web application frameworks available. Before we can start building applications it is important to first understand what the Ruby on Rails framework is.. and what it's not.
@@ -138,7 +135,5 @@ Rails ships with a great set of view helpers, one of my favorites is the ```plur
 This should return "5 laptops", if you switch the 5 to 1, it will return "1 laptop", pretty cool, right? This means that the Rails console is working, to close the session run the command ```control + d``` and it will return you to the regular terminal session.
 
 Why are we using the `rails console` instead of just starting an `irb` session? That's a great question, try running the same `pluralize` method in an `irb` session and you'll see the following error `NameError: undefined local variable or method `helper` for main:Object`. The reason for the error is because there is a very significant difference between the `rails console` and `irb`, even though they both run Ruby code, `rails console` loads the full Rails environment, which gives you access to Rails' specific methods (along with the full application database). Don't worry if the console is still fuzzy, we'll be using it constantly in future lessons and it will soon become second nature to use.
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-application-basics-readme' title='Rails Application Basics'>Rails Application Basics</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/rails-application-basics-readme'>Rails Application Basics</a> on Learn.co and start learning to code for free.</p>
