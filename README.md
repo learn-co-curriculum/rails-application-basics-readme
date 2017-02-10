@@ -39,7 +39,10 @@ In the same way, when it comes to building a web application it would technicall
 
 *Before you continue, this assumes that you have Ruby, RubyGems, and Bundler installed on your system.*
 
-## Installing the Rails Gem
+
+## Installing the Rails Gem for Local Users
+
+If you are using the IDE you should not do this step. You already have rails installed. Just skip down to generating a new rails application!
 
 As mentioned above, Rails is simply a Ruby Gem. To install it on your system, run the following command in the terminal of your computer:
 
