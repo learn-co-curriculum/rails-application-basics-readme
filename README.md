@@ -124,6 +124,8 @@ Now that the server is running properly, you can verify that it's working proper
 
 Here you will see the 'Yay! You're on Rails!' page that ships with Rails. It shows that we're ready to start building the application!
 
+In order to **shutdown** your server, you will need to hit the button combination `CTRL+C`.
+
 ## Using the Rails Console
 
 The Rails console is an important tool in the arsenal of any Rails developer. It gives you a direct connection to your application's ecosystem and lets you perform tasks such as:
