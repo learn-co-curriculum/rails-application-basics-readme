@@ -6,6 +6,6 @@ tags:
   - rails new
 languages:
   - ruby
-type: 
+type:
   - readme
 resources: 0
