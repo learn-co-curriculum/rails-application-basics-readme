@@ -157,7 +157,7 @@ breakdown for each directory:
   by developers.
 
 - **vendor** – this directory has been utilized for varying purposes in the
-  past. In Rails 4+, its main purpose is for integrating CLIent-side MVC
+  past. In Rails 4+, its main purpose is for integrating Client-side MVC
   frameworks, such as AngularJS.
 
 - **Gemfile** – the Gemfile contains all of the gems that are included in the
