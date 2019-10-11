@@ -103,11 +103,17 @@ to follow a standard naming practice.
 
 ## Rails File Structure Overview
 
+Be sure to change into your new Rails app directory:
+
+```bash
+cd blog-flash
+```
+
 Since you will be working with this file structure on a daily basis, it is very
 important to understand and become familiar with the file system. Below is a
 breakdown for each directory:
 
-- **app** – contains the models, views, and controllers, along with the the rest
+- **app** – contains the models, views, and controllers, along with the rest
   of the core functionality of the application. This is the one directory where
   you can make a change and not have to restart the Rails server. The majority of
   your time will be spent working in this directory. In addition to the full MVC
