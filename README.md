@@ -69,7 +69,9 @@ lessons, so don't worry if it all feels a little overwhelming._
 
 # Creating Your First Rails Project
 
-_Before you continue, this assumes that you have Ruby, RubyGems, and Bundler installed on your system._
+_Before you continue, this assumes that you have Ruby, RubyGems, and Bundler installed on your system.
+Now is also the time to make sure you're doing development on a local computer. If you've been
+using the Learn In-Browser IDE, now is the time to transition off of it before heading further._
 
 ## Installing the Rails Gem for Local Users
 
