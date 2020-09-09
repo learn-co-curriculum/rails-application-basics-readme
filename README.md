@@ -203,6 +203,7 @@ application in the terminal and run:
 ```bash
 rails s
 ```
+> :warning: **If you are running into errors due to webpacker, check out this open issue for possible solutions**: https://github.com/learn-co-curriculum/rails-application-basics-readme/issues/19
 
 This will startup the rails server and you will see output such as the following:
 
