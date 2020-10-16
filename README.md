@@ -271,5 +271,3 @@ environment, which provides access to Rails's specific methods (along with the
 full application database). Don't worry if the idea of using the console is
 still fuzzy –– we'll be using it constantly in future lessons, and it will soon
 become second nature.
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/rails-application-basics-readme'>Rails Application Basics</a> on Learn.co and start learning to code for free.</p>
